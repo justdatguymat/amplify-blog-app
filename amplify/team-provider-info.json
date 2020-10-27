@@ -1,0 +1,34 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplifyblogapp-dev-112146-authRole",
+      "UnauthRoleArn": "arn:aws:iam::156538011341:role/amplify-amplifyblogapp-dev-112146-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::156538011341:role/amplify-amplifyblogapp-dev-112146-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-amplifyblogapp-dev-112146-deployment",
+      "UnauthRoleName": "amplify-amplifyblogapp-dev-112146-unauthRole",
+      "StackName": "amplify-amplifyblogapp-dev-112146",
+      "StackId": "arn:aws:cloudformation:eu-west-1:156538011341:stack/amplify-amplifyblogapp-dev-112146/9a109f10-1846-11eb-9cf8-029fee76954c",
+      "AmplifyAppId": "d1yeg8if34duzk"
+    },
+    "categories": {
+      "function": {
+        "amplifyblogapp16878551DefineAuthChallenge": {},
+        "amplifyblogapp16878551CreateAuthChallenge": {},
+        "amplifyblogapp16878551VerifyAuthChallengeResponse": {
+          "RECAPTCHASECRET": "6LeI_dsZAAAAAE5Ud4s9lO1IdZT-NyfemRXOJW7M"
+        },
+        "amplifyblogapp16878551CustomMessage": {
+          "REDIRECTURL": "http://localhost:3000/",
+          "EMAILSUBJECT": "",
+          "EMAILMESSAGE": "hello there"
+        }
+      },
+      "auth": {
+        "amplifyblogapp16878551": {
+          "hostedUIProviderCreds": "[{\"ProviderName\":\"Facebook\",\"client_id\":\"497183744275800\",\"client_secret\":\"04706697a366a0940588f17eae9dba1f\"},{\"ProviderName\":\"Google\",\"client_id\":\"469316980574-esp8a7paqiprk5fim1kl9dchoioevv4h.apps.googleusercontent.com\",\"client_secret\":\"cxgjBwZsMXxIwWkErKAtoWDB\"},{\"ProviderName\":\"LoginWithAmazon\",\"client_id\":\"amazonappid\",\"client_secret\":\"amazonappsecret\"}]"
+        }
+      }
+    }
+  }
+}

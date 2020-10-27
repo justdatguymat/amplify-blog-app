@@ -1,0 +1,17 @@
+{
+  "trigger": true,
+  "modules": [
+    "captcha-verify"
+  ],
+  "parentResource": "amplifyblogapp16878551",
+  "functionName": "amplifyblogapp16878551VerifyAuthChallengeResponse",
+  "resourceName": "amplifyblogapp16878551VerifyAuthChallengeResponse",
+  "parentStack": "auth",
+  "triggerEnvs": [],
+  "triggerDir": "/usr/local/lib/node_modules/@aws-amplify/cli/node_modules/amplify-category-auth/provider-utils/awscloudformation/triggers/VerifyAuthChallengeResponse",
+  "triggerTemplate": "VerifyAuthChallengeResponse.json.ejs",
+  "roleName": "amplifyblogapp16878551VerifyAuthChallengeResponse",
+  "skipEdit": true,
+  "RECAPTCHASECRET": "6LeI_dsZAAAAAE5Ud4s9lO1IdZT-NyfemRXOJW7M",
+  "enableCors": false
+}

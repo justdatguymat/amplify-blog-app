@@ -1,0 +1,30 @@
+type Blog 
+@auth(rules: [{ allow: owner}, { allow: public, operations: [read]}])
+@model(timestamps: { createdAt: "createdOn", updatedAt: "updatedOn"}) {
+  id: ID!
+  name: String!
+  posts: [Post] @connection(keyName: "byBlog", fields: ["id"])
+}
+
+type Post
+@model(timestamps: { createdAt: "createdOn", updatedAt: "updatedOn"})
+@auth(rules: [{ allow: owner}, { allow: public, operations: [read]}])
+@key(name: "byBlog", fields: ["blogID"]) {
+  id: ID!
+  title: String!
+  content: String!
+  tags: [String!]!
+  blogID: ID!
+  blog: Blog @connection(fields: ["blogID"])
+  comments: [Comment] @connection(keyName: "byPost", fields: ["id"])
+}
+
+type Comment 
+@model(timestamps: { createdAt: "createdOn", updatedAt: "updatedOn"})
+@auth(rules: [{ allow: owner}, { allow: public, operations: [read]}])
+@key(name: "byPost", fields: ["postID", "content"]) {
+  id: ID!
+  postID: ID!
+  post: Post @connection(fields: ["postID"])
+  content: String!
+}
